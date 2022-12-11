@@ -1,0 +1,21 @@
+CRITICAL - 2022-06-01 17:02:16 --> Use of undefined constant exists - assumed 'exists' (this will throw an Error in a future version of PHP)
+#0 /var/www/html/app/Views/registration.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/var/www/html/a...', 11, Array)
+#1 /var/www/html/system/View/View.php(210): include('/var/www/html/a...')
+#2 /var/www/html/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/html/system/Common.php(1089): CodeIgniter\View\View->render('registration', Array, true)
+#4 /var/www/html/app/Controllers/Home.php(34): view('registration', Array)
+#5 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->operations()
+#6 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-01 17:06:22 --> syntax error, unexpected ','
+#0 /var/www/html/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/var/www/html/a...')
+#1 /var/www/html/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /var/www/html/system/CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 /var/www/html/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

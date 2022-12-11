@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  nginx:
+    image: nginx
+    ports:
+      - "81:80"
+    volumes:
+      - ./hosts:/etc/nginx/conf.d
+      - ./www:/var/www/html
+      - ./logs:/var/log/nginx
+    links:
+      - php
+
+  php:
+    container_name: documenter
+    build: php
+    volumes:
+      - ./www:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+
+

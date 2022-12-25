@@ -7,6 +7,11 @@ RUN apt-get install -y libpng-dev
 RUN apt-get install -y zlib1g-dev
 
 RUN  apt-get install -y software-properties-common
+
+RUN  apt-get install -y libfreetype6-dev
+RUN  apt-get install -y libjpeg62-turbo-dev
+RUN  apt-get install -y libpng-dev
+
 RUN  docker-php-ext-configure intl
 RUN  docker-php-ext-install intl
 

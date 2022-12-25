@@ -26,9 +26,9 @@ class Home extends BaseController
                 'label' => 'Image File',
                 'rules' => 'uploaded[source]'
                     . '|is_image[source]'
-                    . '|mime_in[source,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
-                    . '|max_size[source,10000]'
-                    . '|max_dims[source,1024,768]',
+                    . '|mime_in[source,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+//                    . '|max_size[source,10000]'
+//                    . '|max_dims[source,1024,768]',
             ],
         ];
         if (!$this->validate($validationRule)) {

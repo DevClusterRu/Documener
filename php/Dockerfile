@@ -20,7 +20,8 @@ RUN docker-php-ext-configure gd \
 
 
 
-RUN docker-php-ext-install -j$(nproc) gd zip
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg --enable-gd
+RUN docker-php-ext-install gd
 
 RUN docker-php-ext-install \
     bcmath \

@@ -2,13 +2,6 @@ FROM php:7.4-fpm
 
 RUN apt-get -y update
 
-RUN apk add --no-cache \
-        freetype-dev \
-        libpng-dev \
-        jpeg-dev \
-        libjpeg-turbo-dev
-
-
 RUN apt-get install -y libicu-dev
 RUN apt-get install -y libpng-dev
 RUN apt-get install -y zlib1g-dev
@@ -26,9 +19,8 @@ RUN docker-php-ext-configure gd \
         --with-gd
 
 
-RUN docker-php-ext-configure gd --with-jpeg
-RUN docker-php-ext-install gd
 
+RUN docker-php-ext-install -j$(nproc) gd zip
 
 RUN docker-php-ext-install \
     bcmath \

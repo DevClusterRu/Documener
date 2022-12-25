@@ -1,6 +1,14 @@
 FROM php:7.4-fpm
 
 RUN apt-get -y update
+
+RUN apk add --no-cache \
+        freetype-dev \
+        libpng-dev \
+        jpeg-dev \
+        libjpeg-turbo-dev
+
+
 RUN apt-get install -y libicu-dev
 RUN apt-get install -y libpng-dev
 RUN apt-get install -y zlib1g-dev
@@ -8,6 +16,14 @@ RUN apt-get install -y zlib1g-dev
 RUN  apt-get install -y software-properties-common
 RUN  docker-php-ext-configure intl
 RUN  docker-php-ext-install intl
+
+
+
+RUN docker-php-ext-configure gd \
+        --with-freetype-dir=/usr/lib/ \
+        --with-png-dir=/usr/lib/ \
+        --with-jpeg-dir=/usr/lib/ \
+        --with-gd
 
 
 RUN docker-php-ext-configure gd --with-jpeg

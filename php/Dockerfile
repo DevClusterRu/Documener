@@ -10,6 +10,7 @@ RUN  docker-php-ext-configure intl
 RUN  docker-php-ext-install intl
 
 
+RUN docker-php-ext-configure gd --with-jpeg
 RUN docker-php-ext-install gd
 
 

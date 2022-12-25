@@ -298,3 +298,119 @@ Stack trace:
   thrown
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2022-12-11 09:47:54 --> imagepng(uploads/parts/1670773674_c4e80c3b713b9c9714c5.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 91, Array)
+#1 /var/www/html/app/Controllers/Home.php(91): imagepng(Resource id #12, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:47:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /var/www/html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/system/API/ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/system/Debug/Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-12-11 09:48:03 --> imagepng(uploads/parts/1670773683_74ec4c6bbc19779834c3.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 91, Array)
+#1 /var/www/html/app/Controllers/Home.php(91): imagepng(Resource id #12, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:48:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /var/www/html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/system/API/ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/system/Debug/Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-12-11 09:49:20 --> imagepng(uploads/parts/1670773760_1b3a6889719d6aee662f.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 91, Array)
+#1 /var/www/html/app/Controllers/Home.php(91): imagepng(Resource id #12, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:50:13 --> imagepng(uploads/parts/1670773813_0ef0e7d5c34be3935c58.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #13, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:50:22 --> imagepng(uploads/parts/1670773822_936c3a21610ba4de89c3.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #13, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:51:17 --> imagepng(uploads/parts/1670773877_ec93c73748d98bb91ccc.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #13, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:52:55 --> imagepng(uploads/parts/1670773975_450e11d43cfba5e88919.png): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #13, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:53:15 --> imagepng(uploads/parts/1670773995_3ad01e13efe136e35762.png): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #12, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:53:15 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /var/www/html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/system/API/ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/system/Debug/Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-12-11 09:54:02 --> imagepng(uploads/parts/1670774042_31cfccfe7d9b9d9bf213.png): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagepng(upload...', '/var/www/html/a...', 95, Array)
+#1 /var/www/html/app/Controllers/Home.php(95): imagepng(Resource id #12, 'uploads/parts/1...')
+#2 /var/www/html/system/CodeIgniter.php(832): App\Controllers\Home->recognize()
+#3 /var/www/html/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /var/www/html/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /var/www/html/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 09:54:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /var/www/html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /var/www/html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /var/www/html/system/API/ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /var/www/html/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /var/www/html/system/Debug/Exceptions.php(115): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

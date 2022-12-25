@@ -27,7 +27,7 @@ class Home extends BaseController
                 'rules' => 'uploaded[source]'
                     . '|is_image[source]'
                     . '|mime_in[source,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
-                    . '|max_size[source,1000]'
+                    . '|max_size[source,10000]'
                     . '|max_dims[source,1024,768]',
             ],
         ];
@@ -52,11 +52,13 @@ class Home extends BaseController
 
     public function recognize()
     {
+
         $x = $this->request->getPost("x");
         $y = $this->request->getPost("y");
         $h = $this->request->getPost("h");
         $w = $this->request->getPost("w");
         $image = substr($this->request->getPost("image"), 1);
+
 
         $image_data = getimagesize($image);
         $media_type = $image_data['mime'];
@@ -77,6 +79,7 @@ class Home extends BaseController
 
         $newfilename = time() . '_' . bin2hex(random_bytes(10));
 
+
         switch ($media_type) {                                           // If media type is
             case 'image/gif' :                                          // GIF
                 $part = "uploads/parts/" . $newfilename . ".gif";
@@ -86,8 +89,9 @@ class Home extends BaseController
                 $part = "uploads/parts/" . $newfilename . ".jpg";
                 imagejpeg($new, $part);                     // Open JPEG
                 break;                                                    // End of switch
-            case 'image/png' :                                          // PNG
+            case 'image/png' :
                 $part = "uploads/parts/" . $newfilename . ".png";
+                //die($part);
                 imagepng($new, $part);                      // Open PNG
                 break;                                                    // End of switch
         }
